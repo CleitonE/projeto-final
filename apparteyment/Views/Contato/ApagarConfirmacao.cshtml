@@ -20,7 +20,7 @@
 
     <form asp-controller="Contato" asp-action="Apagar" method="post">
         <input type="hidden" asp-for="ID" />
-        <button type="submit" class="btn btn-danger" style="background-color: red; color: white;">Excluir</button>
-        <a href="@Url.Action("Index", "Contato")" class="btn btn-secondary" style="background-color: gray; color: white;">Cancelar</a>
+        <button type="submit" class="btn btn-danger">Excluir</button>
+        <a href="@Url.Action("Index", "Contato")" class="btn btn-secondary">Cancelar</a>
     </form>
 </div>

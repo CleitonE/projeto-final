@@ -439,6 +439,12 @@ form p {
   margin: 30px auto;
 }
 
+.apagar-confirmacao p {
+  color: #ffffffd0;
+  margin: 30px auto;
+  font-size: 1.3em;
+}
+
 .apagar-confirmacao, form{
   display: flex;
   flex-direction: column;
@@ -446,17 +452,29 @@ form p {
 
 .apagar-confirmacao .conta-info {
   display: flex;
-  gap: 20px;
 }
 
 .apagar-confirmacao form {
   flex-direction: row;
+  border: 0;
+  background: #0e0e0e;
 }
 
 .apagar-confirmacao form a {
   background-color: #e3aa00;
   color: #000;
   border: 0;
+  padding: 20px;
+  border-radius: 25px;
+  width: 50%;
+}
+
+.apagar-confirmacao form button {
+  color: #000;
+  border: 0;
+  padding: 20px;
+  border-radius: 25px;
+  width: 50%;
 }
 
 .apagar-confirmacao form a:hover {
