@@ -425,6 +425,46 @@ form p {
 
 /*Confirmar exclusão*/
 
+.apagar-confirmacao{
+  text-align: center;
+  margin: 60px auto;
+}
+
+.apagar-confirmacao i {
+  color: #e3aa00;
+}
+
+.apagar-confirmacao h2, .apagar-confirmacao p {
+  color: #ffffffd0;
+  margin: 30px auto;
+}
+
+.apagar-confirmacao, form{
+  display: flex;
+  flex-direction: column;
+}
+
+.apagar-confirmacao .conta-info {
+  display: flex;
+  gap: 20px;
+}
+
+.apagar-confirmacao form {
+  flex-direction: row;
+}
+
+.apagar-confirmacao form a {
+  background-color: #e3aa00;
+  color: #000;
+  border: 0;
+}
+
+.apagar-confirmacao form a:hover {
+  background-color: #b38600;
+  color: #fff;
+  border: 0;
+}
+
 .confirmar-exclusao {
   color: #fff;
   display: flex;
