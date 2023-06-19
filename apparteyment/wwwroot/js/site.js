@@ -94,12 +94,12 @@ function validateNome() {
     this.value = nome;
   }
 
-  // Verifica se o nome contém apenas letras
-  if (/^[A-Za-z]+$/.test(nome)) {
-    submitEnabled = true;
-  } else {
-    errorMessage = "Por favor, adicione um nome válido (apenas letras).";
-  }
+  // // Verifica se o nome contém apenas letras
+  // if (/^[A-Za-z]+$/.test(nome)) {
+  //   submitEnabled = true;
+  // } else {
+  //   errorMessage = "Por favor, adicione um nome válido (apenas letras).";
+  // }
 
   // Define a mensagem de erro e o estado do botão de envio
   errorMessageElement.textContent = errorMessage;
