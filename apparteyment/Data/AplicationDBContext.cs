@@ -7,7 +7,10 @@ namespace apparteyment.Data
     {
         public DbSet<ContactModel> ContactDB { get; set; }
 
+        public DbSet<CadastroModel> Perfil { get; set; }
+
         public AplicationDBContext(DbContextOptions<AplicationDBContext> options) : base(options)
+
         {
         }
     }
