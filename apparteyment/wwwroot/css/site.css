@@ -761,6 +761,33 @@ form p {
   transition: 0.5s;
 }
 
+/*Loading screen*/
+
+.loader {
+  background: #f9f1c9 url(../images/gifs/loading3.gif) no-repeat center center;
+  background-size: 60%;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader.hidden{
+  animation: fadeOut 1.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
 /*Efeito revelar container ao scrollar*/
 
 .revela{
