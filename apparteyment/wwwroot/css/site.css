@@ -370,7 +370,7 @@ form p {
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin: 0 auto;
+  margin: 60px auto;
 }
 
 .login-container p, .login-container a {
@@ -550,16 +550,12 @@ form p {
 
 /*Página da conta do usuário*/
 
-#conta-banner {
-  width: 80%;
-  height: 50%;
-  opacity: 0.3;
-  border: 3px solid #000;
-  border-radius: 25px;
-}
-
 .editar-conta {
-  margin: 25px 0 130px 0;
+  margin: 50px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .editar-conta p{
@@ -765,7 +761,7 @@ form p {
 
 .loader {
   background: #f9f1c9 url(../images/gifs/loading3.gif) no-repeat center center;
-  background-size: 60%;
+  background-size: 40%;
   position: fixed;
   z-index: 100;
   top: 0;
@@ -778,7 +774,7 @@ form p {
 }
 
 .loader.hidden{
-  animation: fadeOut 1.5s;
+  animation: fadeOut 1.6s;
   animation-fill-mode: forwards;
 }
 
@@ -809,7 +805,7 @@ form p {
   }
 }
 @media (max-width: 1100px) {
-  .demo img, section:nth-child(3) img {
+  .demo img, section:nth-child(3) img, .privacy-section img {
     display: none;
   }
 
