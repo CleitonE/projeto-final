@@ -36,12 +36,29 @@ body {
   margin: 65px 0 65px 0;
 }
 
-.text-center #hub{
+.text-center #contacthub{
   color: #e3aa00;
+  font-weight: bold;
+}
+
+.cursor {
+  color: #b38600;
+  animation: blink 1.5s linear infinite;
 }
 
 .hub {
   color: #e3aa00;
+}
+
+/*Animação digitar contacthub */
+
+@keyframes blink {
+  0%{
+    opacity: 100%;
+  }
+  50% {
+    opacity: 0%;
+  }
 }
 
 

@@ -20,6 +20,45 @@ function revelar() {
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+const frases = ["ContactHub", "salvar contatos", "Meus contatos"];
+const el = document.getElementById("contacthub");
+
+let tempoSleep = 100;
+
+let fraseIndex = 0;
+
+const loopEscrever = async () => {
+  while (true){
+    let curWord = frases[fraseIndex];
+
+    for (let i = 0; i < curWord.length; i++) {
+      el.innerText = curWord.substring(0, i + 1);
+      await sleep(tempoSleep);
+    }
+
+    await sleep(tempoSleep * 10);
+
+    for (let i = curWord.length; i > 0; i--) {
+      el.innerText = curWord.substring(0, i - 1);
+      await sleep(tempoSleep);
+    }
+    
+    await sleep(tempoSleep * 5);
+
+    if (fraseIndex === frases.length - 1) {
+      fraseIndex = 0;
+    } else {
+      fraseIndex++;
+    }
+  }
+};
+
+loopEscrever();
+
 window.onload = function() {
   //função adicionando classe para a div que é o carregamento de tela.
   let loader = document.querySelector(".loader");
@@ -135,11 +174,11 @@ function validateNome() {
 
 // Obtém referências para os elementos do formulário
 const form = document.querySelector('#cadastro-form');
-const inputs = form.querySelectorAll('.campo');
-const senhaInput = form.querySelector('.senha');
-const confirmarSenhaInput = form.querySelector('.senhaConf');
-const submitButton = form.querySelector('.submitBtn');
-const mensagemErro = form.querySelector('#mensagem-erro');
+const inputs = document.querySelectorAll('.campo');
+const senhaInput = document.querySelector('.senha');
+const confirmarSenhaInput = document.querySelector('.senhaConf');
+const submitButton = document.querySelector('.submitBtn');
+const mensagemErro = document.querySelector('#mensagem-erro');
 
 // Função para verificar se todos os campos estão preenchidos e as senhas coincidem
 function verificarFormulario() {
@@ -184,5 +223,14 @@ window.addEventListener('DOMContentLoaded', verificarFormulario);
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+//Animação de digitar 
+
+
+// let typed = new Typed(".hub",{
+//   strings : ["ContactHub", "Lugar onde você pode salvar seus contatos"],
+//   typeSpeed : 150,
+//   backSpeed : 150,
+//   looped : true
+// })
 
 
